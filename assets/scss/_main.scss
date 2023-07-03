@@ -1,0 +1,68 @@
+#main {
+  display: flex;
+  margin: 0 $minus-space;
+  #main-container {
+    width: 100%;
+    padding-top: 50px;
+    //   임시배경색
+    background-color: aqua;
+  }
+  #login-container {
+    width: 500px;
+    background-color: beige;
+
+    #login-wrap {
+      #login {
+        text-align: center;
+        font-size: 30px;
+        margin: 10px;
+      }
+      #account-box {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.swiper-wrap {
+  --swiper-navigation-size: 1.6rem;
+  position: relative;
+  width: 720px;
+  border: 1px solid;
+}
+
+#my-swiper {
+  width: 720px;
+  height: 170px;
+}
+
+.swiper-wrap .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrap .swiper-button-next,
+.swiper-wrap .swiper-button-prev {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  color: #ffffff;
+  background-color: #999999;
+  opacity: 1;
+}
+
+.swiper-wrap .swiper-button-prev,
+.swiper-wrap .swiper-rtl .swiper-button-next {
+  z-index: 15;
+  left: -1.5rem;
+  right: auto;
+}
+
+.swiper-wrap .swiper-button-next,
+.swiper-wrap .swiper-rtl .swiper-button-prev {
+  z-index: 15;
+  left: auto;
+  right: -1.5rem;
+}

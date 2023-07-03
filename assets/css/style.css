@@ -1,0 +1,166 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit; /* 링크의 색상 제거 */
+}
+
+input {
+  font-size: 20px;
+  outline: none;
+  padding-left: 10px;
+}
+
+#header {
+  width: 100%;
+}
+#header #header-container {
+  margin: 0 auto;
+  padding: 50px 24px;
+  box-sizing: border-box;
+  width: 1148px;
+  height: 154px;
+  display: flex;
+}
+#header #header-container #logo {
+  margin-right: 40px;
+}
+#header #header-container #search-container {
+  background-color: red;
+  position: relative;
+}
+#header #header-container #search-container input {
+  border: 2px solid #d09aff;
+  width: 550px;
+  height: 54px;
+}
+#header #header-container #search-container input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #cccccc;
+}
+#header #header-container #search-container input::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #cccccc;
+}
+#header #header-container #search-container button {
+  border: none;
+  background-color: white;
+  width: 49px;
+  height: 46px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+#header #header-container #search-container button span {
+  font-size: 35px;
+}
+#header #nav {
+  width: 100%;
+  height: 54px;
+  background-color: #d09aff;
+  display: flex;
+  align-items: center;
+  padding-left: calc((100% - 1148px) / 2);
+}
+#header #nav #nav-container #gnb {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+#header #nav #nav-container #gnb li:not(:last-of-type) {
+  margin-right: 60px;
+}
+#header #nav #nav-container #gnb li:first-child {
+  padding-left: 20px;
+}
+
+#main {
+  display: flex;
+  margin: 0 calc((100% - 1148px) / 2);
+}
+#main #main-container {
+  width: 100%;
+  padding-top: 50px;
+  background-color: aqua;
+}
+#main #login-container {
+  width: 500px;
+  background-color: beige;
+}
+#main #login-container #login-wrap #login {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+}
+#main #login-container #login-wrap #account-box {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-wrap {
+  --swiper-navigation-size: 1.6rem;
+  position: relative;
+  width: 720px;
+  border: 1px solid;
+}
+
+#my-swiper {
+  width: 720px;
+  height: 170px;
+}
+
+.swiper-wrap .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrap .swiper-button-next,
+.swiper-wrap .swiper-button-prev {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  color: #ffffff;
+  background-color: #999999;
+  opacity: 1;
+}
+
+.swiper-wrap .swiper-button-prev,
+.swiper-wrap .swiper-rtl .swiper-button-next {
+  z-index: 15;
+  left: -1.5rem;
+  right: auto;
+}
+
+.swiper-wrap .swiper-button-next,
+.swiper-wrap .swiper-rtl .swiper-button-prev {
+  z-index: 15;
+  left: auto;
+  right: -1.5rem;
+}
